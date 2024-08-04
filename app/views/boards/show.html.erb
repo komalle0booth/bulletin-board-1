@@ -44,6 +44,26 @@
 
 <hr>
 
+<h2>Active posts</h2>
+
+<table border="1">
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th>Posted on</th>
+    <th>Expires on</th>
+  </tr>
+
+  <% @the_board.each do |active_post| %>
+    <tr>
+      <td>active_post.title </td>
+      <td>active_post.body </td>
+      <td>active_post.created_at </td>
+      <td>active_post.expires_on</td>
+
+    <% end %>
+    </tr>
+</table>
 <!--    <div>
       <div>
         <a href="/boards">
